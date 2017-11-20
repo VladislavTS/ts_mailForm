@@ -1,0 +1,83 @@
+.ts_mail-form {
+    width: 100%;
+    max-width: 500px;
+
+    margin: 15px auto;
+    padding: 15px;
+    
+    position: relative;
+}
+.ts_mail-form * {
+    position: relative;
+}
+
+.ts_mail-form label {
+    width: 100%;
+}
+.ts_mail-form *.ts_mean::after {
+    content: "*";
+    
+    width: 5px;
+    height: 5px;
+    
+    font-size: 14px;
+    color: #f44336;
+    
+    position: absolute;
+    top: 0;
+    right: -10px;
+    
+    z-index: 100;
+    
+    display: block;
+}
+
+.ts_mail-form input,
+.ts_mail-form textarea,
+.ts_mail-form select {
+    width: 100%;
+    height: 30px;
+    
+    padding: 5px 15px;
+    margin-bottom: 5px;
+
+    transition: 0.25s;
+    
+    border: 1px solid #f0f0f0;
+}
+.ts_mail-form .error input,
+.ts_mail-form .error textarea {
+    box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.15);
+}
+
+.ts_mail-form input[type="text"] {
+    height: 30px;
+}
+.ts_mail-form textarea {
+    height: 150px;
+}
+
+[button="ts_send-form"] {
+    width: 150px;
+    height: 30px;
+    
+    font-size: 14px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 15px auto;
+    
+    transition: 0.25s;
+    
+    cursor: pointer;
+    background: #f0f0f0;
+}
+[button="ts_send-form"]:hover {
+    background: #c0c0c0;
+}
+
+.ts_response {
+    margin: 15px 0;
+}
